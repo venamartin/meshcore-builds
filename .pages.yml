@@ -1,0 +1,20 @@
+media:
+  input: docs/images
+  output: /images
+
+content:
+  - name: "Meshcore Hardware Builds"
+    label: "Meshcore Build Log"
+    type: collection
+    path: docs
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: date
+        type: datetime
+      - name: tags
+        type: string
+        list: true
+      - name: body
+        type: rich-text
